@@ -6,7 +6,7 @@ export const state = reactive({
   connected: false,
 });
 
-const URL = "http://54.80.96.131:3002";
+const URL = "http://ec2-54-80-96-131.compute-1.amazonaws.com:3002";
 
 export const socket = io(URL);
 
