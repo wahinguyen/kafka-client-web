@@ -36,7 +36,7 @@ const updateCountDown = () => {
 </script>
 
 <template>
-  <div class="w-full h-screen flexitems-center justify-center">
+  <div class="w-full h-screen flex items-center justify-center">
     <div
       class="w-[1024px] h-full flex flex-col gap-8 items-center justify-center"
     >
