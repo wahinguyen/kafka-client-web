@@ -38,10 +38,10 @@ const updateCountDown = () => {
 <template>
   <div class="w-full h-screen flex items-center justify-center">
     <div
-      class="w-[1024px] h-full flex flex-col gap-8 items-center justify-center"
+      class="w-[1024px] flex-col h-full flex gap-8 items-center justify-center"
     >
       <div class="text-lg">Count down for next vote: {{ countDown }}</div>
-      <div class="flex flex-row gap-8 items-center justify-center">
+      <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
         <div
           :class="{ '!bg-gray-400': countDown > 0 }"
           class="hover:bg-red-500 cursor-pointer shadow-md text-white font-bold w-40 h-40 bg-red-600 rounded-lg flex items-center justify-center"
