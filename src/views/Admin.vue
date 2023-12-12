@@ -11,22 +11,28 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="h-screen text-xl flex flex-col items-center justify-center gap-2">
-    <div class="flex flex-row gap-1">
-      <h4 class="font-bold">Total:</h4>
-      {{ data.total }}
-    </div>
-    <div class="flex flex-row gap-1">
-      <h4 class="font-bold">Red:</h4>
-      {{ data.redPercent }}%
-    </div>
-    <div class="flex flex-row gap-1">
-      <h4 class="font-bold">Blue:</h4>
-      {{ data.bluePercent }}%
-    </div>
-    <div class="flex flex-row gap-1">
-      <h4 class="font-bold">Yellow:</h4>
-      {{ data.yellowPercent }}%
+  <div class="w-full h-screen flexitems-center justify-center">
+    <div
+      class="w-[1024px] h-full flex flex-col gap-8 items-center justify-center"
+    >
+      <div class="text-lg">Total vote: {{ data.total }}</div>
+      <div class="flex flex-row gap-8 items-center justify-center">
+        <div
+          class="hover:bg-red-500 shadow-md text-white font-bold w-40 h-40 bg-red-600 rounded-lg flex items-center justify-center"
+        >
+          {{ data.redPercent }}%
+        </div>
+        <div
+          class="hover:bg-blue-500 shadow-md text-white font-bold w-40 h-40 bg-blue-600 rounded-lg flex items-center justify-center"
+        >
+          {{ data.bluePercent }}%
+        </div>
+        <div
+          class="hover:bg-yellow-500 shadow-md text-white font-bold w-40 h-40 bg-yellow-600 rounded-lg flex items-center justify-center"
+        >
+          {{ data.yellowPercent }}%
+        </div>
+      </div>
     </div>
   </div>
 </template>
